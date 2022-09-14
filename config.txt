@@ -1,0 +1,91 @@
+# Mac shortcuts for reference
+#   cmd shift 4			Screenshot eines ausgewählten Bereichs
+#  	cmd+ W				close window
+#	  fn f3 				Expose
+#	  fn F7 				anfang/zurück 			
+#	  fn f8				play pause
+#	  fn f9				vor
+#	  fn f10				mute
+#	  fn f11				vol up
+#   fn f12				vol down 
+#   cmd e				eject 
+#	  cmd q				programm schliessen
+# 	cmd z				Rückgängig
+# 	cmd space			spotlight
+#	  cmd F3				desktop
+#	  alt cmd esc			PANIC
+#	  cmd tab				fester wechseln
+
+
+
+#definition of macros
+macroblock      
+
+	macro PASSWORD   
+		SET_META lshift            
+		PRESS g                     
+		POP_ALL_META          
+		press a
+		press r
+		press r
+		press o
+		press s
+		press 2
+		press 0
+		press 5
+		SET_META lshift            
+   	PRESS 1                     
+   	POP_ALL_META 
+	endmacro
+
+
+	macro MAC_COPY
+		SET_META lgui            
+		PRESS c                     
+		POP_ALL_META          
+	 endmacro
+   
+endblock
+
+# remap MACOS refering to keycommands or macros
+remapblock
+# left hand side function keys
+  EXTRA_F1   ESC 
+  EXTRA_F2   PASSWORD
+  EXTRA_F3   FILE_INFO
+  EXTRA_F4   APPTOGGLE_MAC
+  EXTRA_F5   UNDO_MAC
+  EXTRA_F6   REDO_MAC
+  EXTRA_F7   MARK_ALL_MAC
+  EXTRA_F8   FIND_MAC
+  EXTRA_F9   COPY_MAC
+  EXTRA_F10  PASTE_MAC
+# function keys upper row
+  F13         PANIC_MAC
+  F14         WINCLOSE_MAC
+  F15         APPCLOSE_MAC
+  F16         EXPOSE_MAC
+  F17         SPOTLIGHT_MAC
+  F18         DESKTOP_MAC
+  F19         MEDIA_PREV_TRACK
+  F20         MEDIA_PLAY_PAUSE
+  F21         MEDIA_NEXT_TRACK
+  F22         MEDIA_MUTE
+  F23         MEDIA_VOLUME_DOWN
+  F24         MEDIA_VOLUME_UP
+ # cursor block
+  LANG_4      DOWN
+ # Numpad
+   ESC         NUM_LOCK
+   NUM_LOCK    SCROLL_LOCK
+   SCROLL_LOCK PAD_SLASH
+   EXTRA_SYSRQ PAD_ASTERIX
+   PAD_ASTERIX PAD_MINUS
+   PAD_MINUS   PAD_ENTER
+# #-key
+   EUROPE_1    BACKSLASH
+
+endblock
+
+
+
